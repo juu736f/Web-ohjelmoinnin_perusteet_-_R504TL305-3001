@@ -1,0 +1,136 @@
+body {
+    background-color: beige;
+}
+
+.mike {
+    float:left;
+}
+.kaisa {
+    float:right;
+}
+
+img {
+    padding:1rem;
+    aspect-ratio:1/1;
+}
+
+#content {
+    margin:1rem;
+}
+
+#heading {
+    display:block;
+    background-color: #a52a2a;
+    color: white;
+    text-align: center;
+    max-width: fit-content;
+    margin:auto;
+    padding:0.01rem 4rem;
+    font-size:1.5rem
+}
+
+p {
+    margin-left:1rem;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+table td, table td * {
+    vertical-align: top;
+}
+
+#experiencetable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#experiencetable tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+#experiencetable td {
+    border: 1px solid black;
+}
+
+#familydatatable {
+    table-layout: fixed;
+    width:auto;
+    margin-left:1rem;
+    max-width:auto;
+}
+
+#familydatatable th {
+    text-align:left;
+}
+
+#familytable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#familytable th {
+    text-align:center;
+    border: 1px solid black;
+    padding:0rem 1rem;
+}
+
+#familytable td {
+    border: 1px solid black;
+    text-align:left;
+    padding:unset;
+}
+
+#familytable tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+#friendtable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#friendtable td {
+    border: 1px solid black;
+    padding:0rem 1rem;
+    text-align:left;
+}
+
+#friendtable th {
+    text-align:center;
+    border: 1px solid black;
+    padding:0rem 2rem;
+}
+
+#friendtable tr:nth-child(even) {
+    background-color: maroon;
+    color:white;
+}
+
+#underlined {
+    text-decoration: underline;
+}
+
+#footer {
+    display:block;
+    background-color:teal;
+    padding:1rem;
+}
+
+#contacts {
+    margin: auto;
+    width: 50%;
+    color:white;
+    border-collapse: collapse;
+    
+}
+
+#contacts a {
+    text-decoration: none;
+    color:white;
+}
+
+#usefullinks a:hover {
+    background-color:grey;
+}

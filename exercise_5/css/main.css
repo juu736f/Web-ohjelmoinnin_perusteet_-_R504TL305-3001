@@ -1,0 +1,54 @@
+.div-form {
+    display:block;
+    border: 1px solid black;
+    width:fit-content;
+    margin: auto auto;
+    border-radius: 1rem;
+    padding:3rem;
+    background-color: #f0e68c;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+
+input {
+    display:inline-block;
+}
+
+label input {
+    display:inline-block;
+}
+
+label {
+    font-weight: bold;
+}
+
+fieldset {
+    margin:0rem;
+    padding-right:5rem;
+}
+
+.sex {
+    display:block;
+    width:fit-content;
+}
+
+.sex label {
+    display:inline-block;
+}
+
+.sex input {
+    display:inline-block;
+}
+
+.sex::before {
+    display:block;
+    width:auto;
+}
+
+textarea {
+    min-height: 6rem;
+    display:block;
+    border-radius: 0.5rem;
+}
