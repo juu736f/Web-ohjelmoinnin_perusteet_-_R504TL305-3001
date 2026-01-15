@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>travel expenses calculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <div class="form-div">
+            <marquee scrollamount="2">travel expenses calculator</marquee>
+            <form action="calculator">
+                <table>
+                    <tr>
+                        <td><p>Kilometers</p></td>
+                        <td><input inputmode="numeric" id="kilometers"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Days</p></td>
+                        <td><input inputmode="numeric" id="days"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Country</p></td>
+                        <td><select name="country" id="country">
+                            <option value="Finland">Finland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sum of expenses</p></td>
+                        <td><p id="expenses">???</p></td>
+                    </tr>
+                </table>
+                <input type="button" id="calculatebtn" value="Calculate" onclick="calculate()">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fuel consumption calculator</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <div class="form-div">
+            <marquee scrollamount="2">fuel consumption calculator</marquee>
+            <form action="calculator">
+                <table>
+                    <tr>
+                        <td>
+                            <p>distance in km</p>
+                        </td>
+                        <td>
+                            <input inputmode="numeric" name="distance" id="distance" class="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>consumption</p>
+                        </td>
+                        <td>
+                            <p id="consumption">???</p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" id="calculatebtn" value="Calculate" onclick="calculate()">
+            </form>
+        </div>
+    </body>
+</html>
