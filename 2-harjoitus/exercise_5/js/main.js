@@ -69,6 +69,5 @@ function submit() {
 
 function randomNumber(max) {
     let r = Math.floor(Math.random() * max)
-    console.log("Generated value " + r)
     return r    
 }
