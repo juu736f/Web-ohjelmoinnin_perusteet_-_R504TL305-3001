@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>math game</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="form-div">
+        <marquee scrollamount="2">math game</marquee>
+        <div id="score"></div>
+        <div id="thegame">
+            <table id="gametable">
+                <tr>
+                    <td>
+                        <p id="number1">???</p>
+                    </td>
+                    <td>
+                        <p id="operand">???</p>
+                    </td>
+                    <td>
+                        <p id="number2">???</p>
+                    </td>
+                    <td>
+                        <p id="equals">=</p>
+                    </td>
+                    <td><input inputmode="numeric" id="answer"></td>
+                </tr>
+            </table>
+            <button id="submit" onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+    <div class="task" id="taskdiv">
+        <p>Task</p>
+        <p id="task">???</p>
+        <p>/5</p>
+    </div>
+
+</body>
+
+</html>
