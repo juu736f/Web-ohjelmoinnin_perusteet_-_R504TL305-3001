@@ -1,22 +1,31 @@
 const staff = [
-    {name: "Mike Mills", position: "Secretary", location: "California"},
-    {name: "Alice Aston", position: "Sales Manager", location: "Barcelona, Spain"},
-    {name: "Jordan Lewis", position: "HR Manager", location: "Milan, Italy"},
-    {name: "Mary Mills", position: "Boss", location: "Hamburg, Germany"},
-    {name: "Philip Patterson", position: "Web Developer", location: "London, England"}
+    { name: "Mike Mills", position: "Secretary", location: "California" },
+    { name: "Alice Aston", position: "Sales Manager", location: "Barcelona, Spain" },
+    { name: "Jordan Lewis", position: "HR Manager", location: "Milan, Italy" },
+    { name: "Mary Mills", position: "Boss", location: "Hamburg, Germany" },
+    { name: "Philip Patterson", position: "Web Developer", location: "London, England" }
 ]
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    console.log("DOM loaded")
-    load_data_to_table(staff)
+    document.getElementById("staff").innerHTML = generateHTML(staff);
 });
 
-function load_data_to_table(array, table) {
-    for (var key in array) {
-        console.log(array[key]["name"] + ", " + array[key]["position"] + ", " + array[key]["location"])
+function generateHTML(arr) {
+    let html = `
+    <table>
+      <tr>
+        <th> Name </th>
+        <th> Position </th>
+        <th> Location </th>
+      </tr>`;
+    for (const item of arr) {
+        html += `
+      <tr>
+        <td> ${item.name} </td>
+        <td> ${item.position} </td>
+        <td> ${item.location} </td>
+      </tr>`;
     }
+    html += "</table>"
+    return html;
 }
-
-
-
-
