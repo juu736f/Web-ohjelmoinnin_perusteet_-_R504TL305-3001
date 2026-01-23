@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <title>Modify the products</title>
+    </head>
+
+    <body>
+        <h1>Modify the products</h1>
+        <form id="products">
+            <select name="productsSelect" id="productsSelect" oninput="showProductInfo()"></select>
+            <div id="productInfo">
+            <form action="productInfoForm">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="productName"></td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input type="text" id="productPrice"></td>
+                    </tr>
+                </table>
+                <button>Save</button>
+            </form>    
+            </div>
+        </form>
+    </body>
+</html>
