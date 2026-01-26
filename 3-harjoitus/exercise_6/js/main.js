@@ -10,6 +10,7 @@ let html = `<option value="" selected disabled hidden>Choose here</option>`;
 
 document.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("categories").innerHTML = generateOptions(products); 
+    evaluateUserOptions()
 });
 
 function generateHTML(arr) {
