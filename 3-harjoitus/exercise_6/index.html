@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <title>Modify the products</title>
+    </head>
+
+    <body>
+        <h1>Modify the products</h1>
+        <form id="products">
+            <p>Max price: </p>
+            <input type="text" name="maxPrice" id="maxPrice" oninput="evaluateUserOptions()">
+            <p>€</p>
+            <select name="categories" id="categories" oninput="evaluateUserOptions()">
+
+            </select><br>
+            <label for="discounts">Display only discounted: </label>
+            <input type="checkbox" name="discounts" id="discounts" oninput="evaluateUserOptions()">
+            <br><label for="sortbyprice">Sort by Price (low-high):</label>
+            <input type="checkbox" name="sortbyprice" id="sortbyprice" oninput="evaluateUserOptions()">
+        </form>    
+        <table id="maxPriceTable"></table>
+    </div>
+        </form>
+    </body>
+</html>
