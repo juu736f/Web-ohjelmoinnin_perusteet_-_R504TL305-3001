@@ -1,15 +1,15 @@
-async function getTodosData() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/');
-    const todos = await response.json();
-    return todos;
-}
+const url = "https://jsonplaceholder.typicode.com/todos/"
+
+document.addEventListener("DOMContentLoaded", (event) => {
+
+});
 
 function loadTodosToTable(todos) {
-    if (!todos || todos.length === 0) return; // Guard against empty data
     const keys = Object.keys(todos[0]);
-    let html = '<table><tr>'; // Header row
+    
+    let html = '<table><tr>'; 
     keys.forEach(key => html += `<th>${key}</th>`);
-    html += '</tr>'; // End header
+    html += '</tr>';
     
     todos.forEach(item => {
         html += '<tr>';
@@ -20,12 +20,22 @@ function loadTodosToTable(todos) {
     document.getElementById("todostable").innerHTML = html;
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
+async function getData() {
     try {
-        const todos = await getTodosData();
-        console.log(todos);
-        loadTodosToTable(todos);
-    } catch (error) {
-        console.error('Failed to load todos:', error);
+        const response = await fetch(url)
+        const parsedResponse = await response.json()
+        return parsedResponse;
+    } catch(error) {
+        console.log(error)
     }
-});
+}
+
+getData().then(result => {
+    loadTodosToTable(result)
+})
+
+
+
+/*
+fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => response.json()).then(json => data = json)
+*/
