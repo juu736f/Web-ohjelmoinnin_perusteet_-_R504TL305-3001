@@ -11,9 +11,9 @@
     <h1>Todos</h1>
     <form id="query">
         <label for="titlequery">Search by Title</label>
-        <input type="text" name="titlequery" id="titlequery">
-        <select name="userselect" id="userselect"></select><br>
-        <input type="checkbox" name="completedcheck" id="completedcheck">
+        <input type="text" name="titlequery" id="titlequery" oninput="updateTable()">
+        <select name="userselect" id="userselect" oninput="updateTable()"></select><br>
+        <input type="checkbox" name="completedcheck" id="completedcheck" oninput="updateTable()">
         <label for="completedcheck">Completed</label>
     </form>
     <table id="todostable"></table>
